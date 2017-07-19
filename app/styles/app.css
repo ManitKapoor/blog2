@@ -1,0 +1,149 @@
+.navb ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navb li {
+    float: left;
+}
+
+.navb li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navb .active {
+    background-color: green;
+}
+
+.navb .pullright {
+    float: right;
+}
+
+.navb li a:hover {
+    background-color: #111;
+}
+
+.menub ul {
+    list-style-type: none;
+    padding: 5px;
+    width: 25%;
+    background-color: rgba(23,34,45,0.2);
+    position: fixed;
+    overflow: auto;
+}
+
+.menub ul li a {
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.menub ul li a.active {
+    background-color: red;
+    color: white;
+}
+
+.menub ul li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#mainbody {
+    margin-left: 26%;
+    padding: 10px 20px;
+}
+
+.modal {
+    margin-left: 40%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body { 
+    text-align: center; 
+    padding: 2px 16px;
+}
+
+.prev {
+    float: left;
+    border: 1px solid #fefefe;
+    background: rgba(123,44,2,0.5);
+}
+
+.next {
+    float: right;   
+    border: 1px solid #fefefe;
+    background: rgba(123,44,2,.5);
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navb li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.navb li.dropdown {
+    display: inline-block;
+}
+
+.navb .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navb .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navb .dropdown-content a:hover {background-color: #f1f1f1}
+
+.navb  .dropdown:hover .dropdown-content {
+    display: block;
+}

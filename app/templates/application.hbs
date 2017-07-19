@@ -1,0 +1,29 @@
+{{!-- {{nav menu}} --}}
+<div class="navb">
+	<ul>
+	  <li class='active'><a href='/'>ZOHO Blogs</a></li>
+	 <li class="dropdown" style='float: right;'>
+    	<a href="javascript:void(0)" class="dropbtn">&#9660;</a>
+    	<div class="dropdown-content">
+      		<a>Settings</a>
+      		<a>Logout</a>
+    	</div>
+  	  </li>
+  	  <li class='pullright'><a>Manit</a></li>
+	</ul>
+</div>
+
+
+
+<div class="menub">
+<ul>
+  <li class='active'>{{#link-to 'add'}}Create Blog{{/link-to}}</li>
+  <li>{{#link-to 'show'}}Show Blogs{{/link-to}}</li>
+</ul>
+</div>
+<div id='mainpage'>
+<div id='mainbody'>
+  {{outlet}}
+</div>
+</div>
+

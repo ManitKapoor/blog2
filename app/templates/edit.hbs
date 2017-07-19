@@ -1,0 +1,8 @@
+<form id='saveblog' {{action 'update' on='submit'}}>
+Name: {{input value=name}} <br/>
+Type: {{input value=type}} <br/>
+{{textarea value=content cols="80" rows="6"}}<br />
+<button type='submit'>Update</button>
+<button {{ action 'back' on='click'}}>cancel</button>
+</form>
+{{outlet}}

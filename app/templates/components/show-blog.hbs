@@ -1,0 +1,40 @@
+<div class='menub'>
+<ul>
+ {{#each data as |b|}}
+  <li >
+  <a id='k{{b.id}}' {{action 'setid' b.id on='click'}} >{{b.name}}</a>
+  </li>
+ {{/each}}
+</ul>
+</div>
+
+
+{{#if open}}
+
+<div class='modal'>
+
+<div class='modal-content'>
+
+<div class='modal-header'>
+{{cblog.name}}
+<a class='close' {{action 'close' on='click'}}>X</a>
+</div>
+
+<div class='modal-body'>
+
+{{display-blog cblog=cblog}}
+{{#link-to 'edit' (query-params id=cblog.id)}}Edit{{/link-to}}
+
+{{#if prev}}
+<button class='prev'{{ action 'setprev'}}> &#8912; </button>
+{{/if}}
+
+{{#if next}}
+<button class='next' {{ action 'setnext'}}> &#8913; </button>
+{{/if}}
+
+</div>
+</div>
+
+</div>
+{{/if}}
